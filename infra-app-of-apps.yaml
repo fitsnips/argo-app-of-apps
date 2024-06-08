@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: infra-applications
+  namespace: argocd
+spec:
+  destination:
+    name: in-cluster
+  project: default
+  source:
+    path: infra
+    repoURL: https://github.com/fitsnips/argo-app-of-apps # Update to your repo URL.
+    targetRevision: HEAD
