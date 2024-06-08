@@ -8,6 +8,6 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: infra
+    path: core
     repoURL: https://github.com/fitsnips/argo-app-of-apps # Update to your repo URL.
     targetRevision: HEAD
